@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuna Sudha Rani - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+        section {
+            padding: 40px;
+            background: white;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 5px solid #2575fc;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        .project h3 {
+            color: #2575fc;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kuna Sudha Rani</h1>
+        <p>Software Developer | Frontend & Backend Enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Enthusiastic and highly motivated fresher with a strong foundation in software development. Passionate about creating efficient and user-friendly applications.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript, React.js</li>
+            <li>Python, MySQL</li>
+            <li>Bootstrap, Tailwind CSS</li>
+            <li>Git, GitHub, Postman, VS Code</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Meet Space Finder</h3>
+            <p>Meet Space Finder is a web application designed to help users find and book available meeting spaces. It provides real-time availability updates, authentication, user roles, and notifications. The platform supports advanced search, calendar integration, and an improved UI for ease of use.</p>
+            <p><a href="" target="_blank">View Project</a></p>
+        </div>
+        <div class="project">
+            <h3>Kitchen Corner</h3>
+            <p>Kitchen Corner is an e-commerce platform allowing users to browse and purchase food and ingredients. Users can securely order pre-cooked meals or individual ingredients, with features including secure payments, order tracking, personalized recommendations, and an improved checkout experience.</p>
+            <p><a href="https://sudharanikuna37.github.io/JSPROJECT/" target="_blank">View Project</a></p>
+        </div>
+        <div class="project">
+            <h3>Art Factory</h3>
+            <p>Art Factory is a static web page built to showcase diverse artworks in an organized layout. The platform ensures a visually appealing browsing experience with enhanced accessibility and mobile responsiveness.</p>
+            <p><a href="https://sudharanikuna37.github.io/HTML-CSSproject/" target="_blank">View Project</a></p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sudharanikuna2002@gmail.com">sudharanikuna2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:7661080100">7661080100</a></p>
+        <p><a href="https://www.linkedin.com/in/sudha-rani-663158275">LinkedIn</a> | <a href="https://github.com/sudharanikuna37">GitHub</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Kuna Sudha Rani. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav ul li a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    document.getElementById(targetId).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
